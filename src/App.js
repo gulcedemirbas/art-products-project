@@ -4,12 +4,11 @@ import { useState } from "react";
 import Footer from "./components/Footer";
 import products from "./ProductData";
 import Product from "./components/Product";
-import Search from "./components/SearchFilter";
+import SearchFilter from "./components/SearchFilter";
 
 function App() {
   const [active, setIsActive] = useState(true);
   const [filterClick, setFilterClick] = useState(false);
-  const filterProduct = ["aksesuar", "resim"];
 
   return (
     <>
@@ -49,14 +48,13 @@ function App() {
             ></NavBar>
           </div>
 
-          <Search
+          <SearchFilter
             filterClick={filterClick}
             setFilterClick={setFilterClick}
-          ></Search>
+          ></SearchFilter>
         </div>
 
-
-        {filterClick ? (
+        {/* {products.filter((item) => {if(item.type ==="Aksesuar" && )}) ? (
           <div className="text-right">
             <ul className="bg-white">
               {filterProduct.map((item) => (
@@ -64,9 +62,7 @@ function App() {
               ))}
             </ul>
           </div>
-        ) : null}
-
-
+        ) : null} */}
 
         <div className="h-full flex gap-8 grid grid-cols-4">
           {products.map((item) => {
@@ -74,10 +70,7 @@ function App() {
           })}
         </div>
 
-
         <Footer></Footer>
-
-        
       </div>
     </>
   );

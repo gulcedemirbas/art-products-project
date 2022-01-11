@@ -1,8 +1,10 @@
 import React from "react";
 import { BsSearch, BsFilter } from "react-icons/bs";
 import { useState } from "react";
+import FilterMenu from "./FilterMenu";
 
-export default function Search({filterClick,setFilterClick}) {
+
+export default function SearchFilter({filterClick,setFilterClick,title}) {
   const [searchClick, setSearchClick] = useState(false);
   return (
     <div className="cursor-pointer flex justify-center items-center gap-2 text-gray-500">
@@ -14,11 +16,7 @@ export default function Search({filterClick,setFilterClick}) {
         className="hover:text-black"
         style={{ height: "18px", width: "18px" }}
       ></BsSearch>
-      <BsFilter
-        className="hover:text-black"
-        style={{ height: "24px", width: "24px" }}
-        onClick={() => {setFilterClick(!filterClick)}}
-      ></BsFilter>
+      <FilterMenu title={title} filterClick={filterClick} setFilterClick={setFilterClick}></FilterMenu>
     </div>
   );
 }
