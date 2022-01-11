@@ -1,13 +1,16 @@
 import NavBar from "./components/NavBar";
-import { BsSearch, BsFilter } from "react-icons/bs";
 import logo from "./logo.svg";
 import { useState } from "react";
 import Footer from "./components/Footer";
 import products from "./ProductData";
 import Product from "./components/Product";
+import Search from "./components/SearchFilter";
 
 function App() {
   const [active, setIsActive] = useState(true);
+  const [filterClick, setFilterClick] = useState(false);
+  const filterProduct = ["aksesuar", "resim"];
+
   return (
     <>
       <div className="h-full ml-20 mr-20 ">
@@ -45,18 +48,36 @@ function App() {
               title="İletişim"
             ></NavBar>
           </div>
-          <div className="cursor-pointer flex justify-center items-center gap-2 text-gray-800">
-            <BsSearch style={{ height: "18px", width: "18px" }}></BsSearch>
-            <BsFilter style={{ height: "24px", width: "24px" }}></BsFilter>
-          </div>
+
+          <Search
+            filterClick={filterClick}
+            setFilterClick={setFilterClick}
+          ></Search>
         </div>
+
+
+        {filterClick ? (
+          <div className="text-right">
+            <ul className="bg-white">
+              {filterProduct.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+
+
+
         <div className="h-full flex gap-8 grid grid-cols-4">
           {products.map((item) => {
             return <Product product={item}></Product>;
           })}
         </div>
 
+
         <Footer></Footer>
+
+        
       </div>
     </>
   );
