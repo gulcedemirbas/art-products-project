@@ -9,7 +9,7 @@ import photo8 from "./images/product8/photo8.JPG"
 
 const products = [
     {
-      title: "Çiçekli Ev Aksesuarı Lila",
+      title: "Çiçekli Dekoratif Süs Lila",
       imageList: [
         { image: photo1, name: "photo1" },
       ],
@@ -17,28 +17,28 @@ const products = [
     },
 
     {
-        title: "Kalpli Ev Aksesuarı Sarı",
+        title: "Kalpli Dekoratif Süs Sarı",
         imageList: [
           { image: photo2, name: "photo2" },
         ],
         description: "",
       },
       {
-        title: "G Harfli Ev Aksesuarı",
+        title: "G Harfli Dekoratif Süs",
         imageList: [
           { image: photo3, name: "photo3" },
         ],
         description: "",
       },
       {
-        title: "Kalpli Ev Aksesuarı Lacivert",
+        title: "Kalpli Dekoratif Süs Lacivert",
         imageList: [
           { image: photo4, name: "photo4" },
         ],
         description: "",
       },
       {
-        title: "Çiçekli Ev Aksesuarı Turuncu",
+        title: "Çiçekli Dekoratif Süs Turuncu",
         imageList: [
           { image: photo5, name: "photo5" },
         ],
@@ -46,14 +46,14 @@ const products = [
       },
       
       {
-        title: "Kalpli Ev Aksesuarı Sarı İnce",
+        title: "Kalpli Dekoratif Süs Sarı İnce",
         imageList: [
           { image: photo6, name: "photo6" },
         ],
         description: "",
       },
       {
-        title: "K Harfli Ev Aksesuarı",
+        title: "K Harfli Dekoratif Süs",
         imageList: [
           { image: photo7, name: "photo7"},
         ],

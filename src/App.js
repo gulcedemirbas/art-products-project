@@ -45,7 +45,7 @@ function App() {
               title="İletişim"
             ></NavBar>
           </div>
-          <div className="cursor-pointer flex justify-center items-center gap-2">
+          <div className="cursor-pointer flex justify-center items-center gap-2 text-gray-800">
             <BsSearch style={{ height: "18px", width: "18px" }}></BsSearch>
             <BsFilter style={{ height: "24px", width: "24px" }}></BsFilter>
           </div>
