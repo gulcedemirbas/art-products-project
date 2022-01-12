@@ -8,7 +8,11 @@ import SearchFilter from "./components/SearchFilter";
 
 function App() {
   const [active, setIsActive] = useState(true);
-  const [filterClick, setFilterClick] = useState(false);
+  const [filterClick, setFilterClick] = useState({
+    searchKeyword: "",
+    filterKeyword: "",
+  });
+  console.log(filterClick);
 
   return (
     <>

@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function FilterMenu({ filterClick, setFilterClick, title }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const filterProduct = ["Aksesuar", "Resim"]; 
+  const filterProduct = ["Aksesuar", "Resim"];
 
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -47,7 +47,11 @@ export default function FilterMenu({ filterClick, setFilterClick, title }) {
           <MenuItem
             style={{ fontSize: "0.95em" }}
             onClick={() => {
-              setFilterClick(!filterClick);
+              if (filterClick.filterKeyword) {
+                setFilterClick({ ...filterClick, filterKeyword: "" });
+              } else {
+                setFilterClick({ ...filterClick, filterKeyword: item });
+              }
             }}
           >
             {item}
