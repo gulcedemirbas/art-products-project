@@ -12,8 +12,12 @@ export default function Product({ product }) {
             {product.title}
           </div>
           <div className="flex justify-between pb-5 pt-1 text-gray-500 text-[14px]">
-            <div className="pl-5 pr-2 pt-1 pb-1 text-[#d183a3] hover:text-[#C80A5F] hover:border-black cursor-pointer">Ürün Detayı</div>
-            <div className="border rounded pl-2 pr-2 pt-1 pb-1 mr-5 border-gray-400 hover:text-gray-800   hover:border-gray-800 cursor-pointer">Sipariş Ver</div>
+            <div className="pl-5 pr-2 pt-1 pb-1 text-[#d183a3] hover:text-[#C80A5F] hover:border-black cursor-pointer">
+              Ürün Detayı
+            </div>
+            <div className="border rounded pl-2 pr-2 pt-1 pb-1 mr-5 border-gray-400 hover:text-gray-800   hover:border-gray-800 cursor-pointer">
+              Sipariş Ver
+            </div>
           </div>
         </div>
       </div>

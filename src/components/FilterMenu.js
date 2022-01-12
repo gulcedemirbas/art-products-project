@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function FilterMenu({ filterClick, setFilterClick, title }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const filterProduct = ["Aksesuar", "Resim"]; //searchde tanımla
+  const filterProduct = ["Aksesuar", "Resim"]; 
 
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
