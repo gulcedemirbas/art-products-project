@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../images/profile/profile.jpeg";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
-export default function About() {
+export default function AboutPage() {
   return (
     <>
       <div className="flex justify-center items-center">
@@ -21,13 +21,13 @@ export default function About() {
                 <div className="font-regular text-[14px] mt-10 text-wrap text-gray-600 leading-6">
                   <p>
                     Merhaba, ben Hülya. 30 Eylül 1970 yılında Balıkesir'de
-                    doğdum. Asma yapraklarıyla sarılı balkonu olan küçük,
+                    doğdum. Asma yapraklarıyla sarılı balkonu olan küçük ve
                     sevimli bir evde, tatlı yaramazlıklarla dolu çocukluk
                     dönemimden lise sona kadar anılar biriktirdim. Dokuz Eylül
                     Üniversitesi'nde Sınıf Öğretmenliği Bölümü'nü kazandım ve
                     yıllar boyu sürecek dostlukları burada edindim.
                     Kahramanmaraş'ta başlayan öğretmenlik hayatım 32 yılı geride
-                    bıraktı. Bu 32 yılın bir kısmını dünyalar tatlısı kızımla
+                    bıraktı. Bu 32 yılın bir kısmını dünyalar tatlısı kızımla,
                     ballı lokumumla paylaştım. Son birkaç yıldır sevdiğim
                     şeylere daha çok vakit ayırmaya başladım. Bu süreçte sanat
                     dünyasında bir keşif yolculuğuna çıktım.
