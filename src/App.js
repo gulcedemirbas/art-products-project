@@ -12,7 +12,17 @@ function App() {
     searchKeyword: "",
     filterKeyword: "",
   });
-  console.log(filterClick);
+  const searchArray = filterClick.searchKeyword.split(" ");
+
+  const filteredBySearch = products.filter((item) => {
+    let isIncludes = false;
+    searchArray.forEach((searchItem) => {
+      if (item.title.includes(searchItem) && searchItem.length > 1) {
+        isIncludes = true;
+      }
+    });
+    return isIncludes;
+  });
 
   return (
     <>
