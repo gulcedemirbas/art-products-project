@@ -8,27 +8,41 @@ import SearchFilter from "./components/SearchFilter";
 
 function App() {
   const [active, setIsActive] = useState(true);
-  const [filterClick, setFilterClick] = useState({
+  const [filterList, setFilterList] = useState({
     searchKeyword: "",
     filterKeyword: "",
   });
-  const searchArray = filterClick.searchKeyword.split(" ");
+  
+  const myResult =
+  filterList.filterKeyword === ""
+    ? products
+    : products.filter((item) => item.type === filterList.filterKeyword);
 
-  const filteredBySearch = products.filter((item) => {
+  const searchArray = filterList.searchKeyword.split(" ");
+  const filteredBySearch = filterList.searchKeyword === "" ? myResult : myResult.filter((item) => {
     let isIncludes = false;
     searchArray.forEach((searchItem) => {
-      if (item.title.includes(searchItem) && searchItem.length > 1) {
-        isIncludes = true;
+      if (item.title.toLocaleLowerCase().includes(searchItem.toLocaleLowerCase()) && searchItem.length > 1) {
+        isIncludes = true; 
       }
     });
     return isIncludes;
-  });
+  }); // for SearchFilter component we put an object state and defined a searchkeyword and filterkeyword keys.
+
+  console.log(filterList);
+
+ 
 
   return (
     <>
-      <div className="h-full ml-20 mr-20 ">
-        <div className="flex" style={{ justifyContent: "space-between" }}>
-          <div className="flex h-16 mb-3 cursor-pointer">
+      <div className="h-full ml-20 mr-20">
+        <div className="flex mb-6" style={{ justifyContent: "space-between" }}>
+          <div
+            onClick={() => {
+              window.location.reload();
+            }}
+            className="flex h-16 mb-3 cursor-pointer"
+          >
             <img src={logo}></img>
           </div>
           <div className="flex justify-center items-center gap-10 p-[0px 40px]">
@@ -63,23 +77,23 @@ function App() {
           </div>
 
           <SearchFilter
-            filterClick={filterClick}
-            setFilterClick={setFilterClick}
+            filterList={filterList}
+            setFilterList={setFilterList}
           ></SearchFilter>
         </div>
 
-        {/* {products.filter((item) => {if(item.type ==="Aksesuar" && )}) ? (
-          <div className="text-right">
-            <ul className="bg-white">
-              {filterProduct.map((item) => (
-                <li>{item}</li>
-              ))}
-            </ul>
-          </div>
-        ) : null} */}
+      {/*   {filterList.filterKeyword ? <div className="text-[12px] italic flex justify-end text-gray-500">
+          "{filterList.filterKeyword}" için {filteredBySearch.length} ürün listeleniyor</div> : <div className="text-[12px] italic flex justify-end text-gray-500">{filteredBySearch.length} ürün listeleniyor </div> 
+          } */}
+        
+        <div className="text-[12px] italic flex justify-end text-gray-500">
+          {filterList.searchKeyword && '"' + filterList.searchKeyword + '"' + " için "} 
+          {filterList.filterKeyword && filterList.filterKeyword + " kategorisinde "}
+          {filteredBySearch.length} ürün listeleniyor
+        </div>
 
         <div className="h-full flex gap-8 grid grid-cols-4">
-          {products.map((item) => {
+          {filteredBySearch.map((item) => {
             return <Product product={item}></Product>;
           })}
         </div>

@@ -1,11 +1,9 @@
 import * as React from "react";
-import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { BsSearch, BsFilter } from "react-icons/bs";
-import { useState } from "react";
+import { BsFilter } from "react-icons/bs";
 
-export default function FilterMenu({ filterClick, setFilterClick, title }) {
+export default function FilterMenu({ filterList, setFilterList }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const filterProduct = ["Aksesuar", "Resim"];
 
@@ -45,13 +43,14 @@ export default function FilterMenu({ filterClick, setFilterClick, title }) {
       >
         {filterProduct.map((item) => (
           <MenuItem
-            style={{ fontSize: "0.95em" }}
+            style={{ fontSize: "0.95em", backgroundColor: filterList.filterKeyword === item ? "#bdbfc1" : "transparent"}}
             onClick={() => {
-              if (filterClick.filterKeyword) {
-                setFilterClick({ ...filterClick, filterKeyword: "" });
+              if (filterList.filterKeyword && filterList.filterKeyword === item) {
+                setFilterList({ ...filterList, filterKeyword: "" });
               } else {
-                setFilterClick({ ...filterClick, filterKeyword: item });
+                setFilterList({ ...filterList, filterKeyword: item });
               }
+              setAnchorEl(null);
             }}
           >
             {item}

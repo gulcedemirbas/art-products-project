@@ -18,7 +18,7 @@ const products = [
         { image: photo1, name: "photo1" },
       ],
       description: "",
-      type:"aksesuar"
+      type:"Aksesuar"
     },
 
     {
@@ -27,7 +27,7 @@ const products = [
           { image: photo2, name: "photo2" },
         ],
         description: "",
-        type:"aksesuar"
+        type:"Aksesuar"
       },
       {
         title: "G Harfli Dekoratif Süs",
@@ -35,7 +35,7 @@ const products = [
           { image: photo3, name: "photo3" },
         ],
         description: "",
-        type:"aksesuar"
+        type:"Aksesuar"
       },
       {
         title: "Kalpli Dekoratif Süs Lacivert",
@@ -43,7 +43,7 @@ const products = [
           { image: photo4, name: "photo4" },
         ],
         description: "",
-        type:"aksesuar"
+        type:"Aksesuar"
       },
       {
         title: "Çiçekli Dekoratif Süs Turuncu",
@@ -51,7 +51,7 @@ const products = [
           { image: photo5, name: "photo5" },
         ],
         description: "",
-        type:"aksesuar"
+        type:"Aksesuar"
       },
       
       {
@@ -60,7 +60,7 @@ const products = [
           { image: photo6, name: "photo6" },
         ],
         description: "",
-        type:"aksesuar"
+        type:"Aksesuar"
       },
       {
         title: "K Harfli Dekoratif Süs",
@@ -68,7 +68,7 @@ const products = [
           { image: photo7, name: "photo7"},
         ],
         description: "",
-        type:"aksesuar"
+        type:"Aksesuar"
       },
       {
         title: "İşlemeli Çerçeve Kadın Resmi Beyaz",
@@ -76,7 +76,7 @@ const products = [
           { image: photo8, name: "photo8"},
         ],
         description: "",
-        type:"resim"
+        type:"Resim"
       },
       {
         title: "İşlemeli Çerçeve Kadın Resmi Yeşil",
@@ -84,7 +84,7 @@ const products = [
           { image: photo9, name: "photo9"},
         ],
         description: "",
-        type:"resim"
+        type:"Resim"
       },
       {
         title: "İşlemeli Çerçeve Gül Resmi Mavi",
@@ -92,7 +92,7 @@ const products = [
           { image: photo10, name: "photo10"},
         ],
         description: "",
-        type:"resim"
+        type:"Resim"
       },
       {
         title: "Altın Çerçeve Parlak Balık Figürlü Peri Kızı Resmi",
@@ -100,7 +100,7 @@ const products = [
           { image: photo11, name: "photo11"},
         ],
         description: "",
-        type:"resim"
+        type:"Resim"
       },
       {
         title: "Beyaz Çerçeve Marilyn Monroe Resmi",
@@ -108,7 +108,7 @@ const products = [
           { image: photo12, name: "photo12"},
         ],
         description: "",
-        type:"resim"
+        type:"Resim"
       },
 
   ];

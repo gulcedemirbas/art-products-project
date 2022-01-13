@@ -3,12 +3,12 @@ import React from "react";
 export default function Product({ product }) {
   return (
     <>
-      <div className="mt-8 ">
+      <div className="mt-2">
         <div className="bg-white rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 shadow-lg">
-          <div className="w-full p-5 flex">
+          <div className="w-full p-5 flex h-[400px]">
             <img src={product.imageList[0].image}></img>
           </div>
-          <div className="text-left pl-5 pb-5 pt-1 font-medium text-gray-600">
+          <div className="text-left pl-5 pb-5 pt-1 font-medium text-gray-600 h-[50px]">
             {product.title}
           </div>
           <div className="flex justify-between pb-5 pt-1 text-gray-500 text-[14px]">

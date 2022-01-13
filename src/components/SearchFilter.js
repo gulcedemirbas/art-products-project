@@ -3,7 +3,7 @@ import { BsSearch, BsFilter } from "react-icons/bs";
 import { useState } from "react";
 import FilterMenu from "./FilterMenu";
 
-export default function SearchFilter({ filterClick, setFilterClick }) {
+export default function SearchFilter({ filterList, setFilterList }) {
   const [searchClick, setSearchClick] = useState(false);
   return (
     <div className="cursor-pointer flex justify-center items-center gap-2 text-gray-500">
@@ -12,7 +12,7 @@ export default function SearchFilter({ filterClick, setFilterClick }) {
           className="p-1"
           placeholder="Arama"
           onChange={(e) => {
-            setFilterClick({ ...filterClick, searchKeyword: e.target.value });
+            setFilterList({ ...filterList, searchKeyword: e.target.value });
           }}
         ></input>
       ) : null}
@@ -24,8 +24,8 @@ export default function SearchFilter({ filterClick, setFilterClick }) {
         style={{ height: "18px", width: "18px" }}
       ></BsSearch>
       <FilterMenu
-        filterClick={filterClick}
-        setFilterClick={setFilterClick}
+        filterList={filterList}
+        setFilterList={setFilterList}
       ></FilterMenu>
     </div>
   );
