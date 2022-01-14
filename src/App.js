@@ -7,7 +7,7 @@ import logo from "./logo.svg";
 import { useState,useEffect } from "react";
 import SearchFilter from "./components/SearchFilter";
 import { useNavigate, useLocation } from "react-router-dom";
-
+import "./index.css"
 function App() {
   const [filterList, setFilterList] = useState({
     searchKeyword: "",
@@ -17,6 +17,13 @@ function App() {
   const navigate = useNavigate();
   const location = useLocation();
   console.log(location)
+  const [loggedIn, setLoggedIn] = useState(null);
+
+useEffect(() => {
+    const loggedUser = localStorage.getItem('/');
+    setLoggedIn(Boolean(loggedUser));
+  }, []);
+
   useEffect(() => {
     if(location.pathname === "/About")
     {
@@ -32,8 +39,8 @@ function App() {
 
   return (
     <>
-      <div className="h-full ml-20 mr-20">
-        <div className="flex mb-6" style={{ justifyContent: "space-between" }}>
+      <div className="h-full ml-20 mr-20" >
+        <div className=" h-[70px] flex mb-6" style={{ justifyContent: "space-between" }}>
           <div
             onClick={() => {
               setActiveTab("Anasayfa")
@@ -82,8 +89,9 @@ function App() {
             setFilterList={setFilterList}
           ></SearchFilter>
         </div>
-
+        
         <Routes>
+        
           <Route path="/" element={<Home filterList={filterList} />}></Route>
           <Route
             path="about"
@@ -96,7 +104,7 @@ function App() {
           <Route
             path="products"
             element={
-              <div className="h-full">
+              <div className="height">
                 Product sayfasıyım ben
               </div>
             }
@@ -104,14 +112,15 @@ function App() {
           <Route
             path="contact"
             element={
-              <div className="h-full">
+              <div className="height">
                 Contact sayfasıyım ben
 
               </div>
             }
           />
         </Routes>
-        <Footer></Footer>
+
+        <Footer ></Footer>
       </div>
     </>
   );

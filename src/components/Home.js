@@ -35,7 +35,7 @@ export default function Home({ filterList }) {
             "{filterList.filterKeyword}" için {filteredBySearch.length} ürün listeleniyor</div> : <div className="text-[12px] italic flex justify-end text-gray-500">{filteredBySearch.length} ürün listeleniyor </div> 
             } */}
 
-      <div className="text-[12px] italic flex justify-end text-gray-500">
+      <div className="text-[12px] italic flex justify-end text-gray-500 ">
         {filterList.searchKeyword &&
           '"' + filterList.searchKeyword + '"' + " için "}
         {filterList.filterKeyword &&
@@ -43,7 +43,7 @@ export default function Home({ filterList }) {
         {filteredBySearch.length} ürün listeleniyor
       </div>
 
-      <div className="h-full flex gap-8 grid grid-cols-4">
+      <div className="h-full gap-8 " style={{display:"grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))"}}>
         {filteredBySearch.map((item) => {
           return <Product product={item}></Product>;
         })}

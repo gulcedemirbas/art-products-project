@@ -5,7 +5,7 @@ export default function AboutPage() {
   return (
     <>
       <div className="flex justify-center items-center">
-        <div className="w-[800px] h-[100%] bg-[#FFF4F4] mt-12 pl-4 pr-4 rounded-lg border border-gray-300 bg-zinc-400/[.1]">
+        <div className="w-[800px] h-[100%] bg-[#FFF4F4] mt-8 pl-4 pr-4 rounded-lg border border-gray-300 bg-zinc-400/[.1]">
           <div className="w-full flex justify-center pt-12 pb-12 ">
             <div>
               <div className="flex h-[150px] justify-center">
@@ -15,7 +15,7 @@ export default function AboutPage() {
                 ></img>
               </div>
               <div className="pt-12 pl-20 pr-20">
-                <div className="text-center p-2 font-medium text-[16px] w-100 bg-[#C80A5F]/[.05] rounded-lg text-gray-800 shadow-lg">
+                <div className="text-center p-2 font-medium text-[16px] w-100 bg-[#C80A5F]/[.05] rounded-lg text-gray-600 shadow-lg">
                   Hülyacasanat Kimdir?
                 </div>
                 <div className="font-regular text-[14px] mt-10 text-wrap text-gray-600 leading-6">
@@ -28,13 +28,13 @@ export default function AboutPage() {
                     yıllar boyu sürecek dostlukları burada edindim.
                     Kahramanmaraş'ta başlayan öğretmenlik hayatım 32 yılı geride
                     bıraktı. Bu 32 yılın bir kısmını dünyalar tatlısı kızımla,
-                    ballı lokumumla paylaştım. Son birkaç yıldır sevdiğim
-                    şeylere daha çok vakit ayırmaya başladım. Bu süreçte sanat
-                    dünyasında bir keşif yolculuğuna çıktım.
+                    ballı lokumumla paylaştım. 
                   </p>
                   <br></br>
                   <p>
-                    Yeni bir şeyler üretmek için çıktığım bu yol hayatıma
+                   Son birkaç yıldır sevdiğim
+                    şeylere daha çok vakit ayırmaya başladım. Bu süreçte sanat
+                    dünyasında bir keşif yolculuğuna çıktım. Yeni bir şeyler üretmek için çıktığım bu yol hayatıma
                     mutluluk, huzur ve renk kattı. Sanata, renklere, tasarıma ve
                     yaratıcı düşünceye ayırdığım bu zaman, başarılı sonuçlar
                     elde etmemi ve kendimi yeniden keşfetmemi sağlıyor. Küçük

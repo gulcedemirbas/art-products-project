@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     <>
-      <div className="flex justify-between items-center h-[60px] bg-[#FFF4F4] mt-12 pl-4 pr-4 rounded-t-lg border border-gray-500">
+      <div className="flex justify-between items-center h-[60px] bg-[#FFF4F4] pl-4 pr-4 rounded-t-lg border border-gray-500 mt-10">
         <div className="flex gap-2">
         <FaFacebook
          onClick={()=>{window.open('https://www.facebook.com/hulyacasanat', '_blank');}}
