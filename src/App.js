@@ -8,6 +8,9 @@ import { useState,useEffect } from "react";
 import SearchFilter from "./components/SearchFilter";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./index.css"
+import ContactPage from "./components/ContactPage";
+
+
 function App() {
   const [filterList, setFilterList] = useState({
     searchKeyword: "",
@@ -37,20 +40,23 @@ useEffect(() => {
     }
   }, [])
 
+  
+
   return (
     <>
       <div className="h-full ml-20 mr-20" >
-        <div className=" h-[70px] flex mb-6" style={{ justifyContent: "space-between" }}>
+        <div className=" h-[70px] grid grid-rows-1 mb-6" >
+          <div className="flex justify-between">
           <div
             onClick={() => {
               setActiveTab("Anasayfa")
               navigate("/");
             }}
-            className="flex h-16 mb-3 cursor-pointer"
+            className="mt-1 h-16 cursor-pointer w-[120px]"
           >
             <img src={logo}></img>
           </div>
-          <div className="flex justify-center items-center gap-10 p-[0px 40px]">
+          <div className="flex items-center gap-10">
             <NavBar
               active={activeTab === "Anasayfa"}
               onClick={()=>{
@@ -82,16 +88,17 @@ useEffect(() => {
               title="İletişim"
             
             ></NavBar>
-          </div>
-
-          <SearchFilter
+            <SearchFilter
             filterList={filterList}
             setFilterList={setFilterList}
           ></SearchFilter>
+          </div>
+          </div>
+
+          
         </div>
         
         <Routes>
-        
           <Route path="/" element={<Home filterList={filterList} />}></Route>
           <Route
             path="about"
@@ -113,7 +120,7 @@ useEffect(() => {
             path="contact"
             element={
               <div className="height">
-                Contact sayfasıyım ben
+                <ContactPage></ContactPage>
 
               </div>
             }
