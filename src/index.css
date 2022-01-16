@@ -4,23 +4,37 @@
 
 body {
   margin: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FFF4F4;
-  height: 100%
-
+  background-color: #fff4f4;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-#root{
-  height: 100%
+#root {
+  height: 100%;
 }
 
-.height{
-  height: calc(100vh - 9vw)
+.height {
+  height: 100%;
+}
+
+.myCarousel
+{
+  background-color: white;
+  
+}
+
+
+.myCarousel img {
+  border-radius: 0.5rem !important;
+  
+}
+
+.myCarousel figure {
+  background-color: white;
 }
