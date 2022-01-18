@@ -19,7 +19,6 @@ function App() {
   const [activeTab, setActiveTab] = useState("Anasayfa");
   const navigate = useNavigate();
   const location = useLocation();
-  console.log(location);
   const [loggedIn, setLoggedIn] = useState(null);
 
   useEffect(() => {
@@ -28,7 +27,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (location.pathname === "/About") {
+    if (location.pathname === "/about") {
       setActiveTab("Hakkımda");
     } else if (location.pathname === "/products") {
       setActiveTab("Ürünler");
@@ -39,8 +38,8 @@ function App() {
 
   return (
     <>
-      <div className="h-full ml-20 mr-20">
-        <div className="h-[70px] grid grid-rows-1 mb-6">
+      <div className="min-h-full ml-20 mr-20 relative">
+        <div className="h-[70px] p-[10px]">
           <div className="flex justify-between items-center">
             <div
               onClick={() => {
@@ -86,14 +85,15 @@ function App() {
               ></NavBar>
             </div>
             <div>
+            {activeTab !== "Anasayfa" ? null : 
               <SearchFilter
                 filterList={filterList}
                 setFilterList={setFilterList}
-              ></SearchFilter>
+              ></SearchFilter>}
             </div>
           </div>
         </div>
-        <div className="h-full">
+        <div className="pb-[80px]">
           <Routes>
             <Route path="/" element={<Home filterList={filterList} />}></Route>
             <Route
@@ -122,8 +122,9 @@ function App() {
             />
           </Routes>
         </div>
-
-        <Footer></Footer>
+        <div className="absolute bottom-0 w-full">
+          <Footer></Footer>
+        </div>
       </div>
     </>
   );
