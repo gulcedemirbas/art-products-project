@@ -8,7 +8,7 @@ export default function Product({ product }) {
           <div className="w-full p-5 flex h-[400px]">
             <img src={product.imageList[0].image}></img>
           </div>
-          <div className="text-left pl-5 pb-5 pt-1 font-medium text-gray-600 h-[50px]">
+          <div className="text-left pl-5 pb-5 pt-1 font-medium text-gray-600 h-[50px] ">
             {product.title}
           </div>
           <div className="flex justify-between pb-5 pt-1 text-gray-500 text-[14px]">

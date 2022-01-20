@@ -43,7 +43,7 @@ export default function Home({ filterList }) {
         {filteredBySearch.length} ürün listeleniyor
       </div>
 
-      <div className="h-full gap-8 " style={{display:"grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))"}}>
+      <div className="h-full gap-8" style={{display:"grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))"}}>
         {filteredBySearch.map((item) => {
           return <Product product={item}></Product>;
         })}

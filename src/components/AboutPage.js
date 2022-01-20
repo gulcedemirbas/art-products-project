@@ -14,7 +14,7 @@ export default function AboutPage() {
                   src={logo}
                 ></img>
               </div>
-              <div className="pt-12 pl-20 pr-20">
+              <div className="pt-8 pl-20 pr-20">
                 <div className="text-center p-2 font-medium text-[16px] w-100 bg-[#C80A5F]/[.05] rounded-lg text-gray-600 shadow-lg">
                   Hülyacasanat Kimdir?
                 </div>

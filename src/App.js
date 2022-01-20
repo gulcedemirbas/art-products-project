@@ -93,7 +93,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="pb-[80px]">
+        <div className="pb-20">
           <Routes>
             <Route path="/" element={<Home filterList={filterList} />}></Route>
             <Route
@@ -115,9 +115,8 @@ function App() {
             <Route
               path="contact"
               element={
-                <div className="height">
+                
                   <ContactPage></ContactPage>
-                </div>
               }
             />
           </Routes>
