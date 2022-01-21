@@ -54,10 +54,10 @@ import photo19 from "./images/product19/photo19.JPG";
 import photo19a from "./images/product19/photo19a.JPG";
 import photo19b from "./images/product19/photo19b.JPG";
 
-const myProducts = products.map((item) => {
+/* const myProducts = products.map((item) => {
   return { src: item.imageList[0].image };
 });
-
+ */
 /* const myProducts2 = products.map((item) => {
   if(item.type === "Aksesuar"){
     return {...item.imageList[2]}

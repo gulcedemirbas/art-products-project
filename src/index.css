@@ -23,3 +23,23 @@ code {
 #root {
   height: 100vh;
 }
+
+@media screen and (max-width: 992px) {
+  .logo {
+    display: none;
+  }
+
+  .menu {
+    display:none;
+  }
+  .hamburger-menu {
+    display:block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu {display: flex;}
+  .hamburger-menu {
+    display:none;
+  }
+}
+

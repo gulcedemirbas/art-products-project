@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate} from "react-router-dom";
 
 export default function Product({ product }) {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="mt-2 flex">
@@ -12,7 +15,7 @@ export default function Product({ product }) {
             {product.title}
           </div>
           <div className="flex justify-between pb-5 pt-1 text-gray-500 text-[14px]">
-            <div className="pl-5 pr-2 pt-1 pb-1 text-[#d183a3] hover:text-[#C80A5F] hover:border-black cursor-pointer">
+            <div onClick={()=>{navigate("products/" + product.id)}} className="pl-5 pr-2 pt-1 pb-1 text-[#d183a3] hover:text-[#C80A5F] hover:border-black cursor-pointer">
               Ürün Detayı
             </div>
             <div onClick={() => {

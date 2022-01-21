@@ -10,6 +10,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./index.css";
 import ContactPage from "./components/ContactPage";
 import ProductsDetail from "./components/ProductsDetail";
+import HamburgerMenu from "./components/HamburgerMenu";
 
 function App() {
   const [filterList, setFilterList] = useState({
@@ -27,7 +28,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (location.pathname === "/about") {
+    if (location.pathname === "/About") {
       setActiveTab("Hakkımda");
     } else if (location.pathname === "/products") {
       setActiveTab("Ürünler");
@@ -46,11 +47,13 @@ function App() {
                 setActiveTab("Anasayfa");
                 navigate("/");
               }}
-              className="h-16 cursor-pointer w-[130px]"
+              className="logo h-16 cursor-pointer w-[130px]"
             >
               <img src={logo}></img>
             </div>
-            <div className="flex gap-10">
+            {/*  <HamburgerMenu></HamburgerMenu> */}
+            <div className="hamburger-menu">Menu</div>
+            <div className="menu flex gap-10">
               <NavBar
                 active={activeTab === "Anasayfa"}
                 onClick={() => {
@@ -84,12 +87,13 @@ function App() {
                 title="İletişim"
               ></NavBar>
             </div>
-            <div>
-            {activeTab !== "Anasayfa" ? null : 
-              <SearchFilter
-                filterList={filterList}
-                setFilterList={setFilterList}
-              ></SearchFilter>}
+            <div className="navbar-search">
+              {activeTab !== "Anasayfa" ? null : (
+                <SearchFilter
+                  filterList={filterList}
+                  setFilterList={setFilterList}
+                ></SearchFilter>
+              )}
             </div>
           </div>
         </div>
@@ -104,21 +108,12 @@ function App() {
                 </div>
               }
             />
-            <Route
-              path="products"
-              element={
-                <div className="height">
-                  <ProductsDetail></ProductsDetail>
-                </div>
-              }
-            />
-            <Route
-              path="contact"
-              element={
-                
-                  <ContactPage></ContactPage>
-              }
-            />
+            <Route path="products">
+              <Route path=":id" element={<ProductsDetail />} />
+              <Route path="" element={<ProductsDetail />} />
+            </Route>
+             
+            <Route path="contact" element={<ContactPage></ContactPage>} />
           </Routes>
         </div>
         <div className="absolute bottom-0 w-full">
