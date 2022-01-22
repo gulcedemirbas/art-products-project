@@ -35,7 +35,10 @@ function App() {
     } else if (location.pathname === "/contact") {
       setActiveTab("İletişim");
     }
-  }, []);
+    else if(location.pathname === "/"){
+      setActiveTab("Anasayfa")
+    }
+  }, [location.pathname]);
 
   return (
     <>

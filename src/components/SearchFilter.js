@@ -9,6 +9,7 @@ export default function SearchFilter({ filterList, setFilterList }) {
     <div className="cursor-pointer flex justify-center items-center gap-2 text-gray-500">
       {searchClick ? (
         <input
+        value={filterList.searchKeyword}
           className="p-1"
           placeholder="Arama"
           onChange={(e) => {
