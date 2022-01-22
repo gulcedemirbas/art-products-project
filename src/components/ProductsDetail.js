@@ -72,7 +72,7 @@ export default function ProductsDetail() {
                           "_blank"
                         );
                       }}
-                      className="border rounded-full pl-2 pr-2 pt-1 pb-1 mr-5 border-gray-300 hover:bg-[#d183a3] bg-[#FFF4F4] hover:text-white text-gray-600 hover:border-gray-300 cursor-pointer w-[120px]"
+                      className="border rounded-full pl-2 pr-2 pt-1 pb-1 mr-5 border-gray-300 hover:bg-secondary bg-primary hover:text-white text-gray-600 hover:border-gray-300 cursor-pointer w-[120px]"
                     >
                       Sipariş Ver
                     </div>

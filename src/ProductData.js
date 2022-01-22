@@ -210,86 +210,86 @@ const products = [
     id: 12,
   },
   {
-    title: "Beyaz Çerçeve Marilyn Monroe Resmi",
+    title: "Gülkız Lila",
     imageList: [
       { image: photo13, name: "photo13" },
       { image: photo13a, name: "photo13a" },
       { image: photo13b, name: "photo13b" },
     ],
     description:
-      "Ürünümüz Marilyn Monroe modelli bir akrilik boya çalışmasıdır. Beyaz çerçeve ile bir sipariş verilebilir. Kişiselleştirilmiş ürün siparişi de verebilirsiniz. Sevdiklerinize güzel bir hediye alternatifi veya evinizin bir köşesini süsleyecek tasarımlar.",
+      "Gülkız serisi kendi tasarımımız olup birbirinden güzel renk çeşitleriyle sevdiklerinize güzel bir hediye alternatifi veya evinizin bir köşesini süsleyecek minik renkli ev aksesuarı olmak için bekliyor. Minimalist yaşam tarzını sevenler için kil hamurundan yapılan bu aksesuarlar oldukça da ekonomik. Ürün fiyat bilgisi için Sipariş Ver butonu ile Instagram üzerinden bize ulaşabilirsiniz.  ",
     type: "Resim",
     id: 12,
   },
   {
-    title: "Beyaz Çerçeve Marilyn Monroe Resmi",
+    title: "Gülkız Sarı",
     imageList: [
       { image: photo14, name: "photo14" },
       { image: photo14a, name: "photo14a" },
       { image: photo14b, name: "photo14b" },
     ],
     description:
-      "Ürünümüz Marilyn Monroe modelli bir akrilik boya çalışmasıdır. Beyaz çerçeve ile bir sipariş verilebilir. Kişiselleştirilmiş ürün siparişi de verebilirsiniz. Sevdiklerinize güzel bir hediye alternatifi veya evinizin bir köşesini süsleyecek tasarımlar.",
+      "Gülkız serisi kendi tasarımımız olup birbirinden güzel renk çeşitleriyle sevdiklerinize güzel bir hediye alternatifi veya evinizin bir köşesini süsleyecek minik renkli ev aksesuarı olmak için bekliyor. Minimalist yaşam tarzını sevenler için kil hamurundan yapılan bu aksesuarlar oldukça da ekonomik. Ürün fiyat bilgisi için Sipariş Ver butonu ile Instagram üzerinden bize ulaşabilirsiniz.",
     type: "Resim",
     id: 13,
   },
   {
-    title: "Beyaz Çerçeve Marilyn Monroe Resmi",
+    title: "Gülkız Pembe",
     imageList: [
       { image: photo15, name: "photo15" },
       { image: photo15a, name: "photo15a" },
       { image: photo15b, name: "photo15b" },
     ],
     description:
-      "Ürünümüz Marilyn Monroe modelli bir akrilik boya çalışmasıdır. Beyaz çerçeve ile bir sipariş verilebilir. Kişiselleştirilmiş ürün siparişi de verebilirsiniz. Sevdiklerinize güzel bir hediye alternatifi veya evinizin bir köşesini süsleyecek tasarımlar.",
+      "Gülkız serisi kendi tasarımımız olup birbirinden güzel renk çeşitleriyle sevdiklerinize güzel bir hediye alternatifi veya evinizin bir köşesini süsleyecek minik renkli ev aksesuarı olmak için bekliyor. Minimalist yaşam tarzını sevenler için kil hamurundan yapılan bu aksesuarlar oldukça da ekonomik. Ürün fiyat bilgisi için Sipariş Ver butonu ile Instagram üzerinden bize ulaşabilirsiniz.",
     type: "Resim",
     id: 14,
   },
   {
-    title: "Beyaz Çerçeve Marilyn Monroe Resmi",
+    title: "Gülkız Mavi",
     imageList: [
       { image: photo16, name: "photo16" },
       { image: photo16a, name: "photo16a" },
       { image: photo16b, name: "photo16b" },
     ],
     description:
-      "Ürünümüz Marilyn Monroe modelli bir akrilik boya çalışmasıdır. Beyaz çerçeve ile bir sipariş verilebilir. Kişiselleştirilmiş ürün siparişi de verebilirsiniz. Sevdiklerinize güzel bir hediye alternatifi veya evinizin bir köşesini süsleyecek tasarımlar.",
+      "Gülkız serisi kendi tasarımımız olup birbirinden güzel renk çeşitleriyle sevdiklerinize güzel bir hediye alternatifi veya evinizin bir köşesini süsleyecek minik renkli ev aksesuarı olmak için bekliyor. Minimalist yaşam tarzını sevenler için kil hamurundan yapılan bu aksesuarlar oldukça da ekonomik. Ürün fiyat bilgisi için Sipariş Ver butonu ile Instagram üzerinden bize ulaşabilirsiniz.",
     type: "Resim",
     id: 15,
   },
   {
-    title: "Beyaz Çerçeve Marilyn Monroe Resmi",
+    title: "Renkli At Modelli Aksesuar",
     imageList: [
       { image: photo17, name: "photo17" },
       { image: photo17a, name: "photo17a" },
       { image: photo17b, name: "photo17b" },
     ],
     description:
-      "Ürünümüz Marilyn Monroe modelli bir akrilik boya çalışmasıdır. Beyaz çerçeve ile bir sipariş verilebilir. Kişiselleştirilmiş ürün siparişi de verebilirsiniz. Sevdiklerinize güzel bir hediye alternatifi veya evinizin bir köşesini süsleyecek tasarımlar.",
+      "Renkli at modelli bu ürünümüz sevdiklerinize güzel bir hediye alternatifi veya evinizin bir köşesini süsleyecek minik renkli ev aksesuarı olmak için bekliyor. Minimalist yaşam tarzını sevenler için kil hamurundan yapılan bu aksesuarlar oldukça da ekonomik. Ürün fiyat bilgisi için Sipariş Ver butonu ile Instagram üzerinden bize ulaşabilirsiniz.",
     type: "Resim",
     id: 16,
   },
   {
-    title: "Beyaz Çerçeve Marilyn Monroe Resmi",
+    title: "Asil At",
     imageList: [
       { image: photo18, name: "photo18" },
       { image: photo18a, name: "photo18a" },
       { image: photo18b, name: "photo18b" },
     ],
     description:
-      "Ürünümüz Marilyn Monroe modelli bir akrilik boya çalışmasıdır. Beyaz çerçeve ile bir sipariş verilebilir. Kişiselleştirilmiş ürün siparişi de verebilirsiniz. Sevdiklerinize güzel bir hediye alternatifi veya evinizin bir köşesini süsleyecek tasarımlar.",
+      "Renkli asil at modelli ürünümüz sevdiklerinize güzel bir hediye alternatifi veya evinizin bir köşesini süsleyecek minik renkli ev aksesuarı olmak için bekliyor. Minimalist yaşam tarzını sevenler için kil hamurundan yapılan bu aksesuarlar oldukça da ekonomik. Ürün fiyat bilgisi için Sipariş Ver butonu ile Instagram üzerinden bize ulaşabilirsiniz.",
     type: "Resim",
     id: 17,
   },
   {
-    title: "Beyaz Çerçeve Marilyn Monroe Resmi",
+    title: "Gülkız Kırmızı",
     imageList: [
       { image: photo19, name: "photo19" },
       { image: photo19a, name: "photo19a" },
       { image: photo19b, name: "photo19b" },
     ],
     description:
-      "Ürünümüz Marilyn Monroe modelli bir akrilik boya çalışmasıdır. Beyaz çerçeve ile bir sipariş verilebilir. Kişiselleştirilmiş ürün siparişi de verebilirsiniz. Sevdiklerinize güzel bir hediye alternatifi veya evinizin bir köşesini süsleyecek tasarımlar.",
+      "Gülkız serisi kendi tasarımımız olup birbirinden güzel renk çeşitleriyle sevdiklerinize güzel bir hediye alternatifi veya evinizin bir köşesini süsleyecek minik renkli ev aksesuarı olmak için bekliyor. Minimalist yaşam tarzını sevenler için kil hamurundan yapılan bu aksesuarlar oldukça da ekonomik. Ürün fiyat bilgisi için Sipariş Ver butonu ile Instagram üzerinden bize ulaşabilirsiniz.",
     type: "Resim",
     id: 18,
   },
