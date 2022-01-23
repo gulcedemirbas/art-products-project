@@ -1,0 +1,369 @@
+[debug] [2022-01-22T14:59:47.222Z] ----------------------------------------------------------------------
+[debug] [2022-01-22T14:59:47.223Z] Command:       /usr/local/bin/firebase /Users/aykutcaliskan/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy --debug
+[debug] [2022-01-22T14:59:47.223Z] CLI Version:   9.23.1
+[debug] [2022-01-22T14:59:47.223Z] Platform:      darwin
+[debug] [2022-01-22T14:59:47.224Z] Node Version:  v12.18.1
+[debug] [2022-01-22T14:59:47.224Z] Time:          Sat Jan 22 2022 17:59:47 GMT+0300 (GMT+03:00)
+[debug] [2022-01-22T14:59:47.224Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-22T14:59:47.267Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-22T14:59:47.268Z] > authorizing via signed-in user (caliskan.aa@gmail.com)
+[debug] [2022-01-22T14:59:47.268Z] [iam] checking project art-blog-project for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-01-22T14:59:47.270Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-22T14:59:47.270Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-22T14:59:48.377Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 22 Jan 2022 14:59:48 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-22T14:59:48.417Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/art-blog-project:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-01-22T14:59:49.277Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 22 Jan 2022 14:59:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=754","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-22T14:59:49.279Z] > refreshing access token with scopes: []
+[debug] [2022-01-22T14:59:49.280Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-22T14:59:49.471Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sat, 22 Jan 2022 14:59:49 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-22T14:59:49.517Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/art-blog-project [none]
+[debug] [2022-01-22T14:59:49.908Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/art-blog-project 200
+[debug] [2022-01-22T14:59:49.908Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/art-blog-project {"projectId":"art-blog-project","projectNumber":"643063540173","displayName":"Art Blog Project","name":"projects/art-blog-project","resources":{"hostingSite":"art-blog-project"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'art-blog-project'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-01-22T14:59:49.914Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-22T14:59:49.914Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-22T14:59:50.078Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Sat, 22 Jan 2022 14:59:50 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-22T14:59:50.120Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/art-blog-project/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-01-22T14:59:51.558Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 22 Jan 2022 14:59:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[art-blog-project]: beginning deploy... 
+[info] i  hosting[art-blog-project]: found 65 files in build 
+[debug] [2022-01-22T14:59:51.580Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2022-01-22T14:59:51.913Z] > refreshing access token with scopes: []
+[debug] [2022-01-22T14:59:51.914Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-22T14:59:51.915Z] [hosting] hash cache [YnVpbGQ] stored for 65 files
+[debug] [2022-01-22T14:59:51.915Z] [hosting][hash queue][FINAL] {"max":330,"min":22,"avg":125.07692307692308,"active":0,"complete":65,"success":65,"errored":0,"retried":0,"total":65,"elapsed":334}
+[debug] [2022-01-22T14:59:52.069Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Sat, 22 Jan 2022 14:59:52 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-22T14:59:52.112Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/art-blog-project/versions/cd197e9c509c12e2:populateFiles [none]
+[debug] [2022-01-22T14:59:52.112Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/art-blog-project/versions/cd197e9c509c12e2:populateFiles {"files":{"/index.html":"7bbc5f45afb1607de192e6856d842a6bcbb4dc74cbc58a5da62a32c806d42574","/asset-manifest.json":"964912dc4623ae053a94c68832ed0761459b3ba95c4c43549cf6e995bc904dc3","/static/css/main.6327cdfb.css":"46820c42836db2c5482e5fd603d67764e7d1559cf5ab47b0550396e8ad62561c","/static/media/logo.508c6686a9f32abe5488f9b4a83a9467.svg":"c308b1e2ffdd9fdf50ac241c02b92f48cb8f749e978d3da2d754b2a0e7ddd09a","/static/css/main.6327cdfb.css.map":"8bf36caac60deb1254161b10780be344c7c398bb827be587aef82283673ecd17","/static/js/main.1c114736.js.LICENSE.txt":"be46ac584e7a22d48c92a4e184fb497cd62d097c787877db1e88ddfbc4bb6538","/static/media/photo2b.f24fe36719aa87c51ead.JPG":"e91aca923344131d5bb9c9e510ce16fb26397f71cad902a9691d67e52ac3d18d","/static/js/main.1c114736.js":"3a8b3f0351ecb1a63902ec454b75fedb423f43a5ec02d8e2c5f8eb5618f86afa","/static/media/photo4b.e8fb6234e29d4fa1f599.JPG":"90440b679a9e419c37458fa77101afb5faf9bb22fe733f85b100c5afff2e09ec","/static/media/photo1b.4d72efae70f7533ef71a.JPG":"e875f1cff3a1b157f420c8b308d6a63fe61e77b65dd7dc9d18c3c0a90d0f936a","/static/media/photo6b.9ca449fc5fa4b58f1604.JPG":"d3887d615027a6b808771ea715babf90a1365ba1730aaf22409be5c11c8185b9","/static/media/photo1a.30935c4175be2ac55990.JPG":"7146b4e23d23d5a265b5967f2b46da7ea8e3f86e91e816c42275939c04fd8d4f","/static/media/photo4a.b6b9232f79f1aaf8c7da.JPG":"4ea48a70b1bd5415722d00011f3267ad5e3f6e559e92ebb03690afb0a270c4c1","/static/media/photo5a.79379a7f21205a97b2d8.JPG":"e5a4a945825b7e2abf745c104e384df9a1574bfd7167da7098f67c4911458cc7","/static/media/photo6a.f910e924e838c7a70d66.JPG":"f2f03eadc19c283bd0eb40171dd52827013b46064fba095e3f6513a140273951","/static/media/photo3a.124456642f149ba6b314.JPG":"d2d68c1ac6149c2cf52fe0ef6f3e0c57b6368f1e94f9b3cf33ae271e7c2446b9","/static/media/photo3b.bd4aecaec9cdcc7e1e22.JPG":"2534b61a5164b8d2917a177b942843ce7a7e9f9b8f7b04116c1b68234481ffe1","/static/media/photo13.73c6ee85758eb7f8ebe6.JPG":"74eb7a5b3a5d96163c3ad519a717e99a484e3221fb9e6f551db547e5857d1b5c","/static/media/photo5b.cdcc8951c863ad8f7846.JPG":"a96f026801c5b8f48cd3cf77ed4851a660dd2ab5791a4b8646acd6161c63e70b","/static/media/photo14a.f3de91316892fc4751e2.JPG":"b7e32bf9668aec8e4d1a03f00f6faece25ec683ad8e5dff164a9a697fbb75c65","/static/media/photo4.c7b3df04225238f03234.JPG":"739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0","/static/media/photo5.b77c0717d0a01dfb5bc0.JPG":"83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936","/static/media/photo2a.fa35637319d5ebc3df2d.JPG":"92ccab553abed7487122a7c1246ce301ce21391e697fc788384920ad89b0170f","/static/media/photo1.bd6afd3cae45ccf7144f.JPG":"3f7e3b747cf2e4028bbf9075d1a900e4312c2c2996b87747e4cced6ec77cd5ff","/static/media/photo10b.dd82462278f7b65d8651.JPG":"a791a96d40a0d5f92fe037302381c3b05081fef68e431edf6e15a8fbf9afcbdf","/static/media/photo6.8f7f69fc110d2fa10378.JPG":"1632d48f0998b9151ea25179e1c31f6641f5917dc3d1fe4989d0092e6629538f","/static/media/photo13b.7859d2f0ba6637cf7db5.JPG":"31b07bb915013cdb6d7ed03dbc3095b1e88babb9e7a414598dbea6e38281cc9f","/static/media/photo14b.5e284505be5532e13535.JPG":"dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c","/static/media/photo19.b882d2fc4a42130bca05.JPG":"0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e","/static/media/photo13a.b2b91a7fa88ed051fc8a.JPG":"d224eb737f28f636f291571c0b6e7f0a79e284607ee7645ca0ac973feedf2d92","/static/media/photo2.3920ef009d4b4829244f.JPG":"0d149b1350362738be238b2980be31655723904df11b56288807a3c7a12a1f20","/static/media/photo3.0dcf42f860a62f03a2cc.JPG":"2b9beefe3cca6355c2c483ff1e12567d176e51e291809376ca353e036f93050d","/static/media/profile.4d780bd0e777da72ea78.jpeg":"c0a173e703e75a55055906dc9adfd085c2490c23074f588ded621d76538c896e","/static/media/photo7.57d4b1bb9bad50517448.JPG":"258842e3a94d852b2f2643787c93100169c25df64ae252384621881d707a376a","/static/media/contact.cacac53d2d236eb30565.JPG":"1a5e317fc75de46000af108500df6ae72349e37f7114d30f65c122680c2d88f8","/static/media/photo10a.0edafdf66891edbdcc74.JPG":"12500b7e5b01b2d9ff78bc77ab9370aaa12f65407bba2bbdf5875ae508a365d4","/static/media/photo14.aca6a1a16986ba5bc27d.JPG":"5bdf5c1708516db8c7220e545f6246fb35913db060b7c72bec149286981130cc","/static/media/photo19a.b8e7dab807c14e121540.JPG":"736bcca7815fd0d5dd17eac5ebb8f667a02ee0830d418fbd0960726689c67404","/static/media/photo17a.dce85099fa861b555803.JPG":"17be4f4039355799ba5b093415e53f1c53da3061966d2df9b560d8f4b87506ac","/static/media/photo10.0fc120cab7c3c9b29c6c.JPG":"5e62455d805566a9abb4568bd15e719ee6bbaa5b7798772566c90d42aea7076c","/static/media/photo16b.d6dd42bb963f443f4c19.JPG":"4bb58b3d73c554de0eb65d6ce70037af8143acb442838a8221ce8d892583dc57","/static/media/photo18b.24df48f76fe20c86390d.JPG":"bdba62c188de7b47e4ba30758ca8a740b0662b469aede65e774f1ceafe4aa317","/static/media/photo17b.1b90fb2624e52cbc1dfc.JPG":"d79c0c06c8f54d26fe82c94e061ed7690047d025912c9249e892316228d4865a","/static/media/photo15b.e85bb44657d0e5c8f0dd.JPG":"cc8d3e81d313a338456efa3ed3bbd6e593c3d0ac352f5460fa35bcd85e6876b3","/static/media/photo16.6791dc0b740ea4570723.JPG":"87936830674c3a46e6662fb3b522bac9d8a3a70f57531eea750f9b0dee94872a","/static/media/photo18a.33c8264f7ed89d9f38f3.JPG":"1b7cb2e8757755c49789457c2ed38ed549493fd3b340db3a73cb57be5fb8dace","/static/media/photo19b.52b8635b6241ac95a23f.JPG":"fe770e54edeabfacea1a19f7e07bab22d648f490a57ca60de4eefcc94a1a11ba","/static/media/photo11a.adb6f5c1ff2f2bb1ea48.jpg":"db0b8d200c53507275bf23751ab32cd1e1a3d08aff911ae9298074d16a3362ac","/static/media/photo16a.9c9cd6711122e55e990c.JPG":"3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533","/static/media/photo18.0281a26e31e0faa01b36.JPG":"dbff9b79386ab0dbd85f841098f91f55d0b37d682127908366495bd1f067b275","/static/media/photo17.5699dca3768c9b7460d4.JPG":"513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770","/static/media/photo15.b20016d1dd9e011c1ea4.JPG":"98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8","/static/media/photo15a.424d5f9a23c28c48e433.JPG":"6cd9304deceffaa691877c3cf8dc860779b5a7de3480ee4882e1490ab47e8e3a","/static/media/photo7b.6501698127b171d37906.JPG":"f306e8679e060e391eff7477e4dbbb0e2224865bf72a7aaf35122bed19136bb0","/static/media/photo7a.e9ba0016388caab17c5a.JPG":"38344135d8d030131816629b85ed7ade676d30693289de0557d26f8fda093333","/static/media/photo8b.4142b8ce18134e9cde1d.JPG":"84fce3103ca07300f662eb427bb1489539ab8e6b0c55c7a748d62a63c117a108","/static/media/photo8.e35ffc954bc280fb2ff7.JPG":"8aad4aa6440fc2649f9ac1465fef96c1c0a9c1ed01c34697e170f44c1ec4408f","/static/media/photo11b.6c66c00dcb7d79b57b50.jpg":"1d714892b6b95b329796a5a8a2de0703f5f6d87bdad6aa2fce45604bce355b61","/static/media/photo11.862039a6bb3007b7e6be.JPG":"91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd","/static/media/photo12.72543664319ce01f92ea.JPG":"239177119459f029e2fcf5c797a3be400324f0def07c8efe7ec2faf8757005c0","/static/media/photo8a.99bcaec990d7bd8f0d82.JPG":"87969bc8946f9ebafaf9af9ba860705f4884025ce685ad0a7b11d44a25b451e1","/static/media/photo9.98a1ada3d0cd99a8ba65.JPG":"43a2296034e3e5fbfb0d099de1497f1eccb3e32c30ed41f749ee119e229c739e","/static/media/photo9b.73fb152b4b13c2046151.JPG":"e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac","/static/media/photo9a.e43abef3dc5cb0e07fe6.JPG":"de725f0c396db6a84cf5a7018662da3052b788e6ce4391bd2c0c596a19b16b09","/static/js/main.1c114736.js.map":"9c31ac1dcb8e5568f92fb180753496c6389ba16b10be117e9531b6275c111031"}}
+[info] i  hosting: adding files to version [0/65] (0%) 
+[info] i  hosting: adding files to version [0/65] (0%) 
+[debug] [2022-01-22T14:59:56.191Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/art-blog-project/versions/cd197e9c509c12e2:populateFiles 200
+[debug] [2022-01-22T14:59:56.196Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/art-blog-project/versions/cd197e9c509c12e2:populateFiles {"uploadRequiredHashes":["e5a4a945825b7e2abf745c104e384df9a1574bfd7167da7098f67c4911458cc7","3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533","5bdf5c1708516db8c7220e545f6246fb35913db060b7c72bec149286981130cc","43a2296034e3e5fbfb0d099de1497f1eccb3e32c30ed41f749ee119e229c739e","98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8","90440b679a9e419c37458fa77101afb5faf9bb22fe733f85b100c5afff2e09ec","e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac","91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd","513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770","739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0","0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e","83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936","dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c","84fce3103ca07300f662eb427bb1489539ab8e6b0c55c7a748d62a63c117a108"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files"}
+[debug] [2022-01-22T14:59:56.204Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e5a4a945825b7e2abf745c104e384df9a1574bfd7167da7098f67c4911458cc7 [none]
+[debug] [2022-01-22T14:59:56.204Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e5a4a945825b7e2abf745c104e384df9a1574bfd7167da7098f67c4911458cc7 [stream]
+[debug] [2022-01-22T14:59:56.208Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533 [none]
+[debug] [2022-01-22T14:59:56.209Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533 [stream]
+[debug] [2022-01-22T14:59:56.209Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/5bdf5c1708516db8c7220e545f6246fb35913db060b7c72bec149286981130cc [none]
+[debug] [2022-01-22T14:59:56.210Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/5bdf5c1708516db8c7220e545f6246fb35913db060b7c72bec149286981130cc [stream]
+[debug] [2022-01-22T14:59:56.210Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/43a2296034e3e5fbfb0d099de1497f1eccb3e32c30ed41f749ee119e229c739e [none]
+[debug] [2022-01-22T14:59:56.210Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/43a2296034e3e5fbfb0d099de1497f1eccb3e32c30ed41f749ee119e229c739e [stream]
+[debug] [2022-01-22T14:59:56.211Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8 [none]
+[debug] [2022-01-22T14:59:56.211Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8 [stream]
+[debug] [2022-01-22T14:59:56.214Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/90440b679a9e419c37458fa77101afb5faf9bb22fe733f85b100c5afff2e09ec [none]
+[debug] [2022-01-22T14:59:56.214Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/90440b679a9e419c37458fa77101afb5faf9bb22fe733f85b100c5afff2e09ec [stream]
+[debug] [2022-01-22T14:59:56.214Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac [none]
+[debug] [2022-01-22T14:59:56.215Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac [stream]
+[debug] [2022-01-22T14:59:56.215Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd [none]
+[debug] [2022-01-22T14:59:56.215Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd [stream]
+[debug] [2022-01-22T14:59:56.216Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770 [none]
+[debug] [2022-01-22T14:59:56.216Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770 [stream]
+[debug] [2022-01-22T14:59:56.217Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0 [none]
+[debug] [2022-01-22T14:59:56.217Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0 [stream]
+[debug] [2022-01-22T14:59:56.217Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e [none]
+[debug] [2022-01-22T14:59:56.217Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e [stream]
+[debug] [2022-01-22T14:59:56.218Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936 [none]
+[debug] [2022-01-22T14:59:56.218Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936 [stream]
+[debug] [2022-01-22T14:59:56.220Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c [none]
+[debug] [2022-01-22T14:59:56.220Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c [stream]
+[debug] [2022-01-22T14:59:56.221Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/84fce3103ca07300f662eb427bb1489539ab8e6b0c55c7a748d62a63c117a108 [none]
+[debug] [2022-01-22T14:59:56.221Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/84fce3103ca07300f662eb427bb1489539ab8e6b0c55c7a748d62a63c117a108 [stream]
+[debug] [2022-01-22T14:59:56.222Z] [hosting][populate queue][FINAL] {"max":4291,"min":4291,"avg":4291,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":4309}
+[debug] [2022-01-22T14:59:56.222Z] [hosting] uploads queued: 14
+[info] i  hosting: uploading new files [0/14] (0%) 
+[info] i  hosting: uploading new files [0/14] (0%) 
+[info] i  hosting: uploading new files [0/14] (0%) 
+[info] i  hosting: uploading new files [0/14] (0%) 
+[info] i  hosting: uploading new files [0/14] (0%) 
+[info] i  hosting: uploading new files [0/14] (0%) 
+[debug] [2022-01-22T15:00:09.302Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e5a4a945825b7e2abf745c104e384df9a1574bfd7167da7098f67c4911458cc7 200
+[debug] [2022-01-22T15:00:09.302Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e5a4a945825b7e2abf745c104e384df9a1574bfd7167da7098f67c4911458cc7 [stream]
+[debug] [2022-01-22T15:00:09.345Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/84fce3103ca07300f662eb427bb1489539ab8e6b0c55c7a748d62a63c117a108 200
+[debug] [2022-01-22T15:00:09.345Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/84fce3103ca07300f662eb427bb1489539ab8e6b0c55c7a748d62a63c117a108 [stream]
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[debug] [2022-01-22T15:00:26.614Z] [uploadQueue] Retrying task 3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533
+[debug] [2022-01-22T15:00:26.629Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533 [none]
+[debug] [2022-01-22T15:00:26.629Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533 [stream]
+[debug] [2022-01-22T15:00:26.642Z] [uploadQueue] Retrying task 5bdf5c1708516db8c7220e545f6246fb35913db060b7c72bec149286981130cc
+[debug] [2022-01-22T15:00:26.645Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/5bdf5c1708516db8c7220e545f6246fb35913db060b7c72bec149286981130cc [none]
+[debug] [2022-01-22T15:00:26.645Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/5bdf5c1708516db8c7220e545f6246fb35913db060b7c72bec149286981130cc [stream]
+[debug] [2022-01-22T15:00:26.647Z] [uploadQueue] Retrying task 43a2296034e3e5fbfb0d099de1497f1eccb3e32c30ed41f749ee119e229c739e
+[debug] [2022-01-22T15:00:26.648Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/43a2296034e3e5fbfb0d099de1497f1eccb3e32c30ed41f749ee119e229c739e [none]
+[debug] [2022-01-22T15:00:26.648Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/43a2296034e3e5fbfb0d099de1497f1eccb3e32c30ed41f749ee119e229c739e [stream]
+[debug] [2022-01-22T15:00:26.649Z] [uploadQueue] Retrying task 98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8
+[debug] [2022-01-22T15:00:26.649Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8 [none]
+[debug] [2022-01-22T15:00:26.650Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8 [stream]
+[debug] [2022-01-22T15:00:26.652Z] [uploadQueue] Retrying task 90440b679a9e419c37458fa77101afb5faf9bb22fe733f85b100c5afff2e09ec
+[debug] [2022-01-22T15:00:26.652Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/90440b679a9e419c37458fa77101afb5faf9bb22fe733f85b100c5afff2e09ec [none]
+[debug] [2022-01-22T15:00:26.653Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/90440b679a9e419c37458fa77101afb5faf9bb22fe733f85b100c5afff2e09ec [stream]
+[debug] [2022-01-22T15:00:26.654Z] [uploadQueue] Retrying task e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac
+[debug] [2022-01-22T15:00:26.654Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac [none]
+[debug] [2022-01-22T15:00:26.654Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac [stream]
+[debug] [2022-01-22T15:00:26.655Z] [uploadQueue] Retrying task 91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd
+[debug] [2022-01-22T15:00:26.655Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd [none]
+[debug] [2022-01-22T15:00:26.655Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd [stream]
+[debug] [2022-01-22T15:00:26.657Z] [uploadQueue] Retrying task 513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770
+[debug] [2022-01-22T15:00:26.658Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770 [none]
+[debug] [2022-01-22T15:00:26.658Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770 [stream]
+[debug] [2022-01-22T15:00:26.662Z] [uploadQueue] Retrying task 739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0
+[debug] [2022-01-22T15:00:26.663Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0 [none]
+[debug] [2022-01-22T15:00:26.663Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0 [stream]
+[debug] [2022-01-22T15:00:26.664Z] [uploadQueue] Retrying task 0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e
+[debug] [2022-01-22T15:00:26.665Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e [none]
+[debug] [2022-01-22T15:00:26.665Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e [stream]
+[debug] [2022-01-22T15:00:26.665Z] [uploadQueue] Retrying task 83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936
+[debug] [2022-01-22T15:00:26.666Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936 [none]
+[debug] [2022-01-22T15:00:26.666Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936 [stream]
+[debug] [2022-01-22T15:00:26.666Z] [uploadQueue] Retrying task dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c
+[debug] [2022-01-22T15:00:26.667Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c [none]
+[debug] [2022-01-22T15:00:26.667Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c [stream]
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[debug] [2022-01-22T15:00:42.499Z] [uploadQueue] Retrying task 3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533
+[debug] [2022-01-22T15:00:42.506Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533 [none]
+[debug] [2022-01-22T15:00:42.506Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533 [stream]
+[debug] [2022-01-22T15:00:42.511Z] [uploadQueue] Retrying task 5bdf5c1708516db8c7220e545f6246fb35913db060b7c72bec149286981130cc
+[debug] [2022-01-22T15:00:42.511Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/5bdf5c1708516db8c7220e545f6246fb35913db060b7c72bec149286981130cc [none]
+[debug] [2022-01-22T15:00:42.511Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/5bdf5c1708516db8c7220e545f6246fb35913db060b7c72bec149286981130cc [stream]
+[debug] [2022-01-22T15:00:42.512Z] [uploadQueue] Retrying task 43a2296034e3e5fbfb0d099de1497f1eccb3e32c30ed41f749ee119e229c739e
+[debug] [2022-01-22T15:00:42.513Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/43a2296034e3e5fbfb0d099de1497f1eccb3e32c30ed41f749ee119e229c739e [none]
+[debug] [2022-01-22T15:00:42.513Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/43a2296034e3e5fbfb0d099de1497f1eccb3e32c30ed41f749ee119e229c739e [stream]
+[debug] [2022-01-22T15:00:42.515Z] [uploadQueue] Retrying task 98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8
+[debug] [2022-01-22T15:00:42.515Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8 [none]
+[debug] [2022-01-22T15:00:42.515Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8 [stream]
+[debug] [2022-01-22T15:00:42.516Z] [uploadQueue] Retrying task e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac
+[debug] [2022-01-22T15:00:42.516Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac [none]
+[debug] [2022-01-22T15:00:42.516Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac [stream]
+[debug] [2022-01-22T15:00:42.516Z] [uploadQueue] Retrying task 90440b679a9e419c37458fa77101afb5faf9bb22fe733f85b100c5afff2e09ec
+[debug] [2022-01-22T15:00:42.516Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/90440b679a9e419c37458fa77101afb5faf9bb22fe733f85b100c5afff2e09ec [none]
+[debug] [2022-01-22T15:00:42.517Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/90440b679a9e419c37458fa77101afb5faf9bb22fe733f85b100c5afff2e09ec [stream]
+[debug] [2022-01-22T15:00:42.517Z] [uploadQueue] Retrying task 91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd
+[debug] [2022-01-22T15:00:42.517Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd [none]
+[debug] [2022-01-22T15:00:42.517Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd [stream]
+[debug] [2022-01-22T15:00:42.518Z] [uploadQueue] Retrying task 513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770
+[debug] [2022-01-22T15:00:42.518Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770 [none]
+[debug] [2022-01-22T15:00:42.518Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770 [stream]
+[debug] [2022-01-22T15:00:42.518Z] [uploadQueue] Retrying task 739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0
+[debug] [2022-01-22T15:00:42.518Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0 [none]
+[debug] [2022-01-22T15:00:42.518Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0 [stream]
+[debug] [2022-01-22T15:00:42.519Z] [uploadQueue] Retrying task 83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936
+[debug] [2022-01-22T15:00:42.519Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936 [none]
+[debug] [2022-01-22T15:00:42.519Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936 [stream]
+[debug] [2022-01-22T15:00:42.519Z] [uploadQueue] Retrying task dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c
+[debug] [2022-01-22T15:00:42.520Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c [none]
+[debug] [2022-01-22T15:00:42.520Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c [stream]
+[debug] [2022-01-22T15:00:42.520Z] [uploadQueue] Retrying task 0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e
+[debug] [2022-01-22T15:00:42.521Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e [none]
+[debug] [2022-01-22T15:00:42.521Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e [stream]
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[info] i  hosting: uploading new files [2/14] (14%) 
+[debug] [2022-01-22T15:00:55.110Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/5bdf5c1708516db8c7220e545f6246fb35913db060b7c72bec149286981130cc 200
+[debug] [2022-01-22T15:00:55.110Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/5bdf5c1708516db8c7220e545f6246fb35913db060b7c72bec149286981130cc [stream]
+[info] i  hosting: uploading new files [3/14] (21%) 
+[debug] [2022-01-22T15:00:55.780Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/90440b679a9e419c37458fa77101afb5faf9bb22fe733f85b100c5afff2e09ec 200
+[debug] [2022-01-22T15:00:55.781Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/90440b679a9e419c37458fa77101afb5faf9bb22fe733f85b100c5afff2e09ec [stream]
+[info] i  hosting: uploading new files [4/14] (28%) 
+[debug] [2022-01-22T15:00:58.927Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/43a2296034e3e5fbfb0d099de1497f1eccb3e32c30ed41f749ee119e229c739e 200
+[debug] [2022-01-22T15:00:58.927Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/43a2296034e3e5fbfb0d099de1497f1eccb3e32c30ed41f749ee119e229c739e [stream]
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[debug] [2022-01-22T15:01:14.106Z] [uploadQueue] Retrying task 3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533
+[debug] [2022-01-22T15:01:14.116Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533 [none]
+[debug] [2022-01-22T15:01:14.121Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533 [stream]
+[debug] [2022-01-22T15:01:14.125Z] [uploadQueue] Retrying task 98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8
+[debug] [2022-01-22T15:01:14.125Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8 [none]
+[debug] [2022-01-22T15:01:14.125Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8 [stream]
+[debug] [2022-01-22T15:01:14.126Z] [uploadQueue] Retrying task e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac
+[debug] [2022-01-22T15:01:14.126Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac [none]
+[debug] [2022-01-22T15:01:14.126Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac [stream]
+[debug] [2022-01-22T15:01:14.127Z] [uploadQueue] Retrying task 91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd
+[debug] [2022-01-22T15:01:14.127Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd [none]
+[debug] [2022-01-22T15:01:14.127Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd [stream]
+[debug] [2022-01-22T15:01:14.128Z] [uploadQueue] Retrying task 513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770
+[debug] [2022-01-22T15:01:14.128Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770 [none]
+[debug] [2022-01-22T15:01:14.128Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770 [stream]
+[debug] [2022-01-22T15:01:14.129Z] [uploadQueue] Retrying task 739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0
+[debug] [2022-01-22T15:01:14.129Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0 [none]
+[debug] [2022-01-22T15:01:14.129Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0 [stream]
+[debug] [2022-01-22T15:01:14.130Z] [uploadQueue] Retrying task 83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936
+[debug] [2022-01-22T15:01:14.130Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936 [none]
+[debug] [2022-01-22T15:01:14.130Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936 [stream]
+[debug] [2022-01-22T15:01:14.130Z] [uploadQueue] Retrying task dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c
+[debug] [2022-01-22T15:01:14.131Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c [none]
+[debug] [2022-01-22T15:01:14.131Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c [stream]
+[debug] [2022-01-22T15:01:14.131Z] [uploadQueue] Retrying task 0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e
+[debug] [2022-01-22T15:01:14.131Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e [none]
+[debug] [2022-01-22T15:01:14.131Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e [stream]
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[debug] [2022-01-22T15:01:26.981Z] [uploadQueue] Retrying task 83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936
+[debug] [2022-01-22T15:01:26.983Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936 [none]
+[debug] [2022-01-22T15:01:26.983Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936 [stream]
+[debug] [2022-01-22T15:01:26.987Z] [uploadQueue] Retrying task 513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770
+[debug] [2022-01-22T15:01:26.988Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770 [none]
+[debug] [2022-01-22T15:01:26.988Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770 [stream]
+[debug] [2022-01-22T15:01:26.989Z] [uploadQueue] Retrying task 98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8
+[debug] [2022-01-22T15:01:26.989Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8 [none]
+[debug] [2022-01-22T15:01:26.989Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8 [stream]
+[debug] [2022-01-22T15:01:26.990Z] [uploadQueue] Retrying task e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac
+[debug] [2022-01-22T15:01:26.990Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac [none]
+[debug] [2022-01-22T15:01:26.990Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac [stream]
+[debug] [2022-01-22T15:01:26.992Z] [uploadQueue] Retrying task 3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533
+[debug] [2022-01-22T15:01:26.992Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533 [none]
+[debug] [2022-01-22T15:01:26.992Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533 [stream]
+[debug] [2022-01-22T15:01:26.993Z] [uploadQueue] Retrying task 739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0
+[debug] [2022-01-22T15:01:26.993Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0 [none]
+[debug] [2022-01-22T15:01:26.994Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0 [stream]
+[debug] [2022-01-22T15:01:26.995Z] [uploadQueue] Retrying task 91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd
+[debug] [2022-01-22T15:01:26.995Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd [none]
+[debug] [2022-01-22T15:01:26.995Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd [stream]
+[debug] [2022-01-22T15:01:26.996Z] [uploadQueue] Retrying task 0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e
+[debug] [2022-01-22T15:01:26.997Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e [none]
+[debug] [2022-01-22T15:01:26.997Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e [stream]
+[debug] [2022-01-22T15:01:26.998Z] [uploadQueue] Retrying task dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c
+[debug] [2022-01-22T15:01:26.998Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c [none]
+[debug] [2022-01-22T15:01:26.998Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c [stream]
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[info] i  hosting: uploading new files [5/14] (35%) 
+[debug] [2022-01-22T15:01:46.488Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac 200
+[debug] [2022-01-22T15:01:46.490Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/e1b6b0a6fb5183777f4fdc7b0dd61c0366ff394169643d962b5e73f2379e3fac [stream]
+[info] i  hosting: uploading new files [6/14] (42%) 
+[info] i  hosting: uploading new files [6/14] (42%) 
+[info] i  hosting: uploading new files [6/14] (42%) 
+[info] i  hosting: uploading new files [6/14] (42%) 
+[debug] [2022-01-22T15:01:55.164Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936 200
+[debug] [2022-01-22T15:01:55.165Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/83a653626a52d8a067ebfc99740c4d6174347405e5afd3b2672c3d4295368936 [stream]
+[info] i  hosting: uploading new files [7/14] (50%) 
+[info] i  hosting: uploading new files [7/14] (50%) 
+[info] i  hosting: uploading new files [7/14] (50%) 
+[info] i  hosting: uploading new files [7/14] (50%) 
+[debug] [2022-01-22T15:02:03.389Z] [uploadQueue] Retrying task 513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770
+[debug] [2022-01-22T15:02:03.391Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770 [none]
+[debug] [2022-01-22T15:02:03.392Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770 [stream]
+[debug] [2022-01-22T15:02:03.396Z] [uploadQueue] Retrying task 98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8
+[debug] [2022-01-22T15:02:03.397Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8 [none]
+[debug] [2022-01-22T15:02:03.397Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8 [stream]
+[debug] [2022-01-22T15:02:03.399Z] [uploadQueue] Retrying task 3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533
+[debug] [2022-01-22T15:02:03.402Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533 [none]
+[debug] [2022-01-22T15:02:03.403Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533 [stream]
+[debug] [2022-01-22T15:02:03.405Z] [uploadQueue] Retrying task 739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0
+[debug] [2022-01-22T15:02:03.406Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0 [none]
+[debug] [2022-01-22T15:02:03.406Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0 [stream]
+[debug] [2022-01-22T15:02:03.418Z] [uploadQueue] Retrying task 91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd
+[debug] [2022-01-22T15:02:03.420Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd [none]
+[debug] [2022-01-22T15:02:03.420Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd [stream]
+[debug] [2022-01-22T15:02:03.424Z] [uploadQueue] Retrying task 0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e
+[debug] [2022-01-22T15:02:03.426Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e [none]
+[debug] [2022-01-22T15:02:03.426Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e [stream]
+[debug] [2022-01-22T15:02:03.428Z] [uploadQueue] Retrying task dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c
+[debug] [2022-01-22T15:02:03.428Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c [none]
+[debug] [2022-01-22T15:02:03.428Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c [stream]
+[info] i  hosting: uploading new files [7/14] (50%) 
+[info] i  hosting: uploading new files [7/14] (50%) 
+[info] i  hosting: uploading new files [7/14] (50%) 
+[info] i  hosting: uploading new files [7/14] (50%) 
+[info] i  hosting: uploading new files [7/14] (50%) 
+[info] i  hosting: uploading new files [7/14] (50%) 
+[info] i  hosting: uploading new files [7/14] (50%) 
+[info] i  hosting: uploading new files [7/14] (50%) 
+[debug] [2022-01-22T15:02:19.368Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c 200
+[debug] [2022-01-22T15:02:19.368Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/dbe23a57909306b3e48bc7daa393d354dcbfa793c0caf0b6c17d0b35bad43c9c [stream]
+[info] i  hosting: uploading new files [8/14] (57%) 
+[info] i  hosting: uploading new files [8/14] (57%) 
+[info] i  hosting: uploading new files [8/14] (57%) 
+[debug] [2022-01-22T15:02:24.898Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533 200
+[debug] [2022-01-22T15:02:24.898Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/3765ee3dd3b8a33238ec828781907ecee44fe54394d1ad3cc38a7d616fd97533 [stream]
+[info] i  hosting: uploading new files [9/14] (64%) 
+[debug] [2022-01-22T15:02:26.583Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8 200
+[debug] [2022-01-22T15:02:26.584Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/98ab5e8d43678fed9de388bd310cff189c3e1881c641f819407d68b0d47d0ed8 [stream]
+[debug] [2022-01-22T15:02:26.842Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e 200
+[debug] [2022-01-22T15:02:26.842Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/0a3f65898638f5f91c78969694dc7f6164bd89353029b413e346b5a68c72fb5e [stream]
+[debug] [2022-01-22T15:02:26.874Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0 200
+[debug] [2022-01-22T15:02:26.875Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/739eb97f2e096c4b831d3d44d2b5898df5ae568237d3d6980bd1dc42dfde12d0 [stream]
+[debug] [2022-01-22T15:02:27.122Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770 200
+[debug] [2022-01-22T15:02:27.123Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/513a0584b6c18606425db4fe747e900b11b90c29912ffc0dda752d02acc01770 [stream]
+[debug] [2022-01-22T15:02:27.204Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd 200
+[debug] [2022-01-22T15:02:27.204Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/art-blog-project/versions/cd197e9c509c12e2/files/91d29e73ccc03e2380cb77d1f136e9f687a3ffa06d338f11575b9353920381fd [stream]
+[debug] [2022-01-22T15:02:27.205Z] [hosting][upload queue][FINAL] {"max":28183,"min":12600,"avg":19374.35714285714,"active":0,"complete":14,"success":14,"errored":0,"retried":49,"total":14,"elapsed":151007}
+[info] ✔  hosting[art-blog-project]: file upload complete 
+[debug] [2022-01-22T15:02:27.211Z] [hosting] deploy completed after 155652ms
+[debug] [2022-01-22T15:02:27.214Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "art-blog-project"
+    },
+    "site": "art-blog-project",
+    "version": "sites/art-blog-project/versions/cd197e9c509c12e2"
+  }
+]
+[info] i  hosting[art-blog-project]: finalizing version... 
+[debug] [2022-01-22T15:02:27.218Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-22T15:02:27.219Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-22T15:02:27.399Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 22 Jan 2022 15:02:27 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-22T15:02:27.448Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/art-blog-project/versions/cd197e9c509c12e2?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2022-01-22T15:02:28.791Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 22 Jan 2022 15:02:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-22T15:02:28.793Z] [hosting] finalized version for art-blog-project: {"name":"sites/art-blog-project/versions/cd197e9c509c12e2","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-01-22T14:59:51.175478Z","createUser":{"email":"caliskan.aa@gmail.com"},"finalizeTime":"2022-01-22T15:02:28.862779Z","finalizeUser":{"email":"caliskan.aa@gmail.com"}}
+[info] ✔  hosting[art-blog-project]: version finalized 
+[info] i  hosting[art-blog-project]: releasing new version... 
+[debug] [2022-01-22T15:02:28.795Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/art-blog-project/releases?version_name=sites/art-blog-project/versions/cd197e9c509c12e2  
+ {"message":null}
+[debug] [2022-01-22T15:02:29.917Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 22 Jan 2022 15:02:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
