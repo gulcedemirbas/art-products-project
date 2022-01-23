@@ -18,7 +18,7 @@ export default function Footer() {
           className="cursor-pointer text-gray-500 hover:text-[#C80A5F]"
         ></FaInstagram>
         </div>
-        <div className="text-gray-500 text-[14px] hover:text-[#C80A5F]">©2022 Art Project Gülce Demirbaş & Aykut Çalışkan</div>
+        <div className="text-gray-500 text-[14px] hover:text-[#C80A5F]">©2022 Art Project Gülce Demirbaş</div>
       </div>
     </>
   );

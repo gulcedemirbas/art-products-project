@@ -11,16 +11,33 @@ export default function MediaControlCard() {
   const theme = useTheme();
 
   return (
-    <Card  sx={{ display: "flex" , width: "1000px" }}>
+    <Card sx={{ display: "flex", width: "1000px" }}>
       <CardMedia
         component="img"
-        sx={{ width: 300 , opacity:"50%"}}
+        sx={{ width: 300, opacity: "50%" }}
         image={contact}
         alt="Live from space album cover"
       />
-      <Box sx={{ display: "flex", flexDirection: "column" , width: "100%", justifyContent: "center", alignItems: "center", paddingTop: "20px"}}>
-        <CardContent sx={{ flex: "1 0 auto"}}>
-          <Typography component="div" variant="h7" style={{display:"flex",flexDirection:"column",fontFamily:"Poppins"}}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          justifyContent: "center",
+          alignItems: "center",
+          paddingTop: "20px",
+        }}
+      >
+        <CardContent sx={{ flex: "1 0 auto" }}>
+          <Typography
+            component="div"
+            variant="h7"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              fontFamily: "Poppins",
+            }}
+          >
             Başlık
             <input
               className="w-[400px] border box-border rounded border border-gray-300 text-[14px] p-1"
@@ -31,10 +48,17 @@ export default function MediaControlCard() {
             variant="subtitle1"
             color="text.secondary"
             component="div"
-            style={{display:"flex", flexDirection:"column", fontFamily:"Poppins"}}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              fontFamily: "Poppins",
+            }}
           >
             Mesajınız
-            <input className="w-[400px] border box-border rounded border border-gray-300 text-[14px] p-1 h-40" placeholder="sjndfdj"></input>
+            <input
+              className="w-[400px] border box-border rounded border border-gray-300 text-[14px] p-1 h-40"
+              placeholder="sjndfdj"
+            ></input>
           </Typography>
         </CardContent>
       </Box>
